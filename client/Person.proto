@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package main;
+option go_package = "../client";
+
+message SocialFollowers {
+  int32 YouTube = 1;
+  int32 Twitter = 2;
+}
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+  SocialFollowers socialFollowers = 3;
+
+}
